@@ -1,4 +1,14 @@
 {
   "initialized": true,
-  "note": "Seeded by public beta bootstrap"
+  "note": "Seeded by public beta bootstrap",
+  "last_run": "2026-03-22T00:17:00Z",
+  "issues_attempted": {
+    "5": {
+      "status": "pr_created",
+      "pr_number": "pending",
+      "branch": "repo-assist/issue-5-bookmark-data-model",
+      "attempt_date": "2026-03-22T00:17:00Z"
+    }
+  },
+  "backlog_cursor": 5
 }
