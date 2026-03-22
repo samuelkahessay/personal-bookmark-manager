@@ -1,7 +1,7 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-22T03:12:00Z",
+  "last_run": "2026-03-22T07:27:12Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
@@ -11,5 +11,19 @@
       "note": "PR created successfully"
     }
   },
-  "backlog_cursor": 5
+  "backlog_cursor": 5,
+  "aw_triage": {
+    "10": {
+      "status": "triaged",
+      "date": "2026-03-22T07:27:12Z"
+    },
+    "11": {
+      "status": "triaged",
+      "date": "2026-03-22T07:27:12Z"
+    },
+    "13": {
+      "status": "triaged",
+      "date": "2026-03-22T07:27:12Z"
+    }
+  }
 }
