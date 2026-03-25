@@ -1,30 +1,31 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-25T15:13:08Z",
+  "last_run": "2026-03-25T16:44:22Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
       "pr_number": 12,
       "branch": "repo-assist/issue-5-bookmark-data-model-26a587a86b8cc550",
       "attempt_date": "2026-03-22T03:12:00Z",
-      "note": "PR #12 open. CI fix PR created (repo-assist/fix-pipeline-scripts-ci-test). Once infra fix merges, #12 CI will pass."
+      "note": "PR #12 open. CI fix pushed directly to PR #12 branch (2026-03-25). Test patterns now correct. PR needs CI re-run and review to merge."
     }
   },
   "infra_prs": {
     "fix-pipeline-scripts-ci-test": {
-      "branch": "repo-assist/fix-pipeline-scripts-ci-test",
-      "status": "open",
+      "branch": "repo-assist/fix-pipeline-scripts-ci-test-d508ecb71d6dee4a",
+      "pr_number": 19,
+      "status": "open_action_required",
       "created": "2026-03-25T15:13:08Z",
-      "note": "Fixes test-pr-review-agent-activation.sh double-paren pattern mismatch. Unblocks PR #12."
+      "note": "CI runs show action_required - needs human approval to run CI. Still valuable to merge to keep main test patterns updated."
     }
   },
   "backlog_cursor": 5,
   "aw_triage": {
     "10": {
-      "status": "closed",
-      "date": "2026-03-22T14:56:09Z",
-      "note": "PRD Decomposer run 23391646624 succeeded - all issues created - CLOSED"
+      "status": "pending_close",
+      "date": "2026-03-25T16:44:22Z",
+      "note": "PRD Decomposer succeeded - all issues created. Commented to close. Cannot close via tools."
     },
     "11": {
       "status": "stale",
@@ -54,17 +55,18 @@
   },
   "infrastructure_issues": {
     "pipeline_scripts_ci_test": {
-      "status": "fixed_pending_merge",
+      "status": "fixed_in_pr12",
       "description": "test-pr-review-agent-activation.sh expected double-paren patterns not matching compiled workflow",
       "impact": "was blocking ALL PRs including PR #12",
-      "fix_pr_branch": "repo-assist/fix-pipeline-scripts-ci-test",
-      "date_fixed": "2026-03-25T15:13:08Z"
+      "fix_applied_to_pr12": "2026-03-25T16:44:22Z",
+      "fix_pr19_branch": "repo-assist/fix-pipeline-scripts-ci-test-d508ecb71d6dee4a",
+      "note": "Fix applied directly to PR #12 branch. PR #19 still useful for main branch."
     }
   },
   "pipeline_state": {
     "status": "at_risk",
-    "reason": "PR #12 for issue #5 blocked by CI test mismatch. Infra fix PR created. Awaiting merge.",
+    "reason": "PR #12 needs CI re-run after fix push. Once CI passes and review approves, PR #12 can merge. PR #19 needs human CI approval.",
     "next_unblockable_issues_after_5_merges": [2, 6, 8, 9],
-    "note": "Once infra fix merges → PR #12 CI passes → review can proceed → #5 closes → 4 issues become parallel"
+    "note": "Fix applied to PR #12 branch. Awaiting CI and review."
   }
 }
