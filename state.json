@@ -1,72 +1,40 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-25T16:44:22Z",
+  "last_run": "2026-03-25T20:05:00Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
       "pr_number": 12,
       "branch": "repo-assist/issue-5-bookmark-data-model-26a587a86b8cc550",
       "attempt_date": "2026-03-22T03:12:00Z",
-      "note": "PR #12 open. CI fix pushed directly to PR #12 branch (2026-03-25). Test patterns now correct. PR needs CI re-run and review to merge."
+      "note": "PR #12 open. CI fix pushed 2026-03-25. CI runs show action_required - needs human CI approval. Commented on PR #12 requesting CI approval (2026-03-25)."
     }
   },
   "infra_prs": {
     "fix-pipeline-scripts-ci-test": {
       "branch": "repo-assist/fix-pipeline-scripts-ci-test-d508ecb71d6dee4a",
       "pr_number": 19,
-      "status": "open_action_required",
+      "status": "action_required_ci",
       "created": "2026-03-25T15:13:08Z",
-      "note": "CI runs show action_required - needs human approval to run CI. Still valuable to merge to keep main test patterns updated."
+      "note": "CI shows action_required - needs human CI approval. Commented on PR #19 (2026-03-25)."
     }
   },
   "backlog_cursor": 5,
   "aw_triage": {
-    "10": {
-      "status": "pending_close",
-      "date": "2026-03-25T16:44:22Z",
-      "note": "PRD Decomposer succeeded - all issues created. Commented to close. Cannot close via tools."
-    },
-    "11": {
-      "status": "stale",
-      "date": "2026-03-25T15:13:08Z",
-      "note": "Early Repo Assist failure - workflow now stable - many comments - leave open"
-    },
-    "13": {
-      "status": "non_critical",
-      "date": "2026-03-25T15:13:08Z",
-      "note": "Code Simplifier - non-critical workflow"
-    },
-    "15": {
-      "status": "tracker",
-      "date": "2026-03-22T14:56:09Z",
-      "note": "No-Op Runs tracker issue - not a failure, leave open"
-    },
-    "16": {
-      "status": "blocked",
-      "date": "2026-03-25T15:13:08Z",
-      "note": "Duplicate Code Detector - Inference Access Denied. Needs valid COPILOT_GITHUB_TOKEN. Labeled blocked."
-    },
-    "17": {
-      "status": "blocked",
-      "date": "2026-03-25T15:13:08Z",
-      "note": "Pipeline Status Report - Inference Access Denied. Needs valid COPILOT_GITHUB_TOKEN. Labeled blocked."
-    }
-  },
-  "infrastructure_issues": {
-    "pipeline_scripts_ci_test": {
-      "status": "fixed_in_pr12",
-      "description": "test-pr-review-agent-activation.sh expected double-paren patterns not matching compiled workflow",
-      "impact": "was blocking ALL PRs including PR #12",
-      "fix_applied_to_pr12": "2026-03-25T16:44:22Z",
-      "fix_pr19_branch": "repo-assist/fix-pipeline-scripts-ci-test-d508ecb71d6dee4a",
-      "note": "Fix applied directly to PR #12 branch. PR #19 still useful for main branch."
-    }
+    "10": {"status": "stale_closeable", "date": "2026-03-25T20:05:00Z", "note": "PRD Decomposer succeeded - all issues created. Expires Mar 29."},
+    "11": {"status": "stale", "date": "2026-03-25T15:13:08Z", "note": "Early Repo Assist failure - 74+ comments - do not comment again"},
+    "16": {"status": "blocked", "date": "2026-03-25T15:13:08Z", "note": "Duplicate Code Detector - Inference Access Denied. Labeled blocked."},
+    "17": {"status": "blocked", "date": "2026-03-25T15:13:08Z", "note": "Pipeline Status Report - Inference Access Denied. Labeled blocked."}
   },
   "pipeline_state": {
     "status": "at_risk",
-    "reason": "PR #12 needs CI re-run after fix push. Once CI passes and review approves, PR #12 can merge. PR #19 needs human CI approval.",
-    "next_unblockable_issues_after_5_merges": [2, 6, 8, 9],
-    "note": "Fix applied to PR #12 branch. Awaiting CI and review."
+    "reason": "PR #12 and PR #19 CI runs show action_required - human must approve CI workflow runs.",
+    "dependency_chain": {
+      "5": "foundational - PR #12 open, action_required CI",
+      "2_6_8_9": "unblocked when #5 merges",
+      "7": "unblocked when #2, #5, #6, #8, #9 merge",
+      "3_4": "unblocked when #7 merges"
+    }
   }
 }
