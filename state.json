@@ -1,38 +1,39 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-25T21:05:14Z",
+  "last_run": "2026-03-25T22:05:06Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
       "pr_number": 12,
       "branch": "repo-assist/issue-5-bookmark-data-model-26a587a86b8cc550",
       "attempt_date": "2026-03-22T03:12:00Z",
-      "note": "PR #12 open. PR #19 created to fix pipeline-scripts CI test. Both PRs waiting for CI/human approval."
+      "note": "PR #12 open. CI fix applied to branch. Waiting for human to approve CI workflow run (action_required). PR #19 also open to fix the same issue on main. Both PRs commented with CI approval instructions."
     }
   },
   "infra_prs": {
     "fix-pipeline-scripts-ci-test": {
       "branch": "repo-assist/fix-pipeline-scripts-ci-test-d508ecb71d6dee4a",
       "pr_number": 19,
-      "status": "open_waiting_ci",
+      "status": "waiting_ci_approval",
       "created": "2026-03-25T15:22:51Z",
-      "note": "Created to fix pipeline-scripts CI test. Once merged, unblocks PR #12 CI."
+      "note": "CI action_required - waiting for maintainer to approve workflow run. Already commented twice."
     }
   },
   "backlog_cursor": 5,
   "aw_triage": {
-    "10": {"status": "stale_commented", "date": "2026-03-25T21:05:14Z", "note": "3+ comments explaining resolution. Do not comment again."},
-    "11": {"status": "stale", "date": "2026-03-25T15:13:08Z", "note": "74+ comments - do not comment again"},
-    "13": {"status": "inference_denied_commented", "date": "2026-03-25T21:05:14Z", "note": "Code Simplifier - Inference Access Denied. 3+ comments. Do not comment again."},
-    "16": {"status": "blocked", "date": "2026-03-25T15:13:08Z", "note": "Duplicate Code Detector - Inference Access Denied. Labeled blocked."},
-    "17": {"status": "blocked", "date": "2026-03-25T15:13:08Z", "note": "Pipeline Status Report - Inference Access Denied. Labeled blocked."}
+    "10": {"status": "stale_commented", "date": "2026-03-25T22:05:06Z", "note": "3+ comments explaining resolution. Do not comment again."},
+    "11": {"status": "stale", "date": "2026-03-25T22:05:06Z", "note": "74+ comments - do not comment again"},
+    "13": {"status": "inference_denied_commented", "date": "2026-03-25T22:05:06Z", "note": "Code Simplifier - Inference Access Denied. 3+ comments. Do not comment again."},
+    "15": {"status": "no_action", "date": "2026-03-25T22:05:06Z", "note": "No-Op Runs tracker - do not comment, says 'Do not assign to an agent'"},
+    "16": {"status": "blocked", "date": "2026-03-25T22:05:06Z", "note": "Duplicate Code Detector - Inference Access Denied. Labeled blocked."},
+    "17": {"status": "blocked", "date": "2026-03-25T22:05:06Z", "note": "Pipeline Status Report - Inference Access Denied. Labeled blocked."}
   },
   "pipeline_state": {
     "status": "at_risk",
-    "reason": "PR #12 (issue #5) and PR #19 (CI fix) both waiting for CI runs/human approval.",
+    "reason": "Both PR #12 (issue #5) and PR #19 (CI fix) are blocked waiting for maintainer to approve GitHub Actions CI workflow runs (action_required status). Multiple comments already posted on both PRs. Human action required.",
     "dependency_chain": {
-      "5": "foundational - PR #12 open, waiting for PR #19 CI fix to merge",
+      "5": "foundational - PR #12 open, waiting for CI approval by maintainer",
       "2_6_8_9": "unblocked when #5 merges",
       "7": "unblocked when #2, #5, #6, #8, #9 merge",
       "3_4": "unblocked when #7 merges"
