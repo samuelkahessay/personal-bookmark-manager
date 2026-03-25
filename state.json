@@ -1,37 +1,38 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-25T20:05:00Z",
+  "last_run": "2026-03-25T21:05:14Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
       "pr_number": 12,
       "branch": "repo-assist/issue-5-bookmark-data-model-26a587a86b8cc550",
       "attempt_date": "2026-03-22T03:12:00Z",
-      "note": "PR #12 open. CI fix pushed 2026-03-25. CI runs show action_required - needs human CI approval. Commented on PR #12 requesting CI approval (2026-03-25)."
+      "note": "PR #12 open. PR #19 created to fix pipeline-scripts CI test. Both PRs waiting for CI/human approval."
     }
   },
   "infra_prs": {
     "fix-pipeline-scripts-ci-test": {
       "branch": "repo-assist/fix-pipeline-scripts-ci-test-d508ecb71d6dee4a",
       "pr_number": 19,
-      "status": "action_required_ci",
-      "created": "2026-03-25T15:13:08Z",
-      "note": "CI shows action_required - needs human CI approval. Commented on PR #19 (2026-03-25)."
+      "status": "open_waiting_ci",
+      "created": "2026-03-25T15:22:51Z",
+      "note": "Created to fix pipeline-scripts CI test. Once merged, unblocks PR #12 CI."
     }
   },
   "backlog_cursor": 5,
   "aw_triage": {
-    "10": {"status": "stale_closeable", "date": "2026-03-25T20:05:00Z", "note": "PRD Decomposer succeeded - all issues created. Expires Mar 29."},
-    "11": {"status": "stale", "date": "2026-03-25T15:13:08Z", "note": "Early Repo Assist failure - 74+ comments - do not comment again"},
+    "10": {"status": "stale_commented", "date": "2026-03-25T21:05:14Z", "note": "3+ comments explaining resolution. Do not comment again."},
+    "11": {"status": "stale", "date": "2026-03-25T15:13:08Z", "note": "74+ comments - do not comment again"},
+    "13": {"status": "inference_denied_commented", "date": "2026-03-25T21:05:14Z", "note": "Code Simplifier - Inference Access Denied. 3+ comments. Do not comment again."},
     "16": {"status": "blocked", "date": "2026-03-25T15:13:08Z", "note": "Duplicate Code Detector - Inference Access Denied. Labeled blocked."},
     "17": {"status": "blocked", "date": "2026-03-25T15:13:08Z", "note": "Pipeline Status Report - Inference Access Denied. Labeled blocked."}
   },
   "pipeline_state": {
     "status": "at_risk",
-    "reason": "PR #12 and PR #19 CI runs show action_required - human must approve CI workflow runs.",
+    "reason": "PR #12 (issue #5) and PR #19 (CI fix) both waiting for CI runs/human approval.",
     "dependency_chain": {
-      "5": "foundational - PR #12 open, action_required CI",
+      "5": "foundational - PR #12 open, waiting for PR #19 CI fix to merge",
       "2_6_8_9": "unblocked when #5 merges",
       "7": "unblocked when #2, #5, #6, #8, #9 merge",
       "3_4": "unblocked when #7 merges"
