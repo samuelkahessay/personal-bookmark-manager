@@ -1,7 +1,7 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-26T05:45:00Z",
+  "last_run": "2026-03-26T06:10:00Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
@@ -11,16 +11,24 @@
       "note": "PR #12 open. CI pending (0 check runs - waiting for maintainer to approve workflow runs)."
     },
     "6": {
-      "status": "pr_created",
-      "branch": "repo-assist/issue-6-localstorage-persistence-dcb244b2b659430b",
-      "attempt_date": "2026-03-26T05:45:00Z",
-      "note": "PR created. Includes studio/types/bookmark.ts for standalone buildability. 9 tests pass."
+      "status": "closed",
+      "note": "Issue closed as completed. PR #20 closed."
     },
     "2": {
+      "status": "closed",
+      "note": "Issue closed as completed. PR #22 closed."
+    },
+    "9": {
       "status": "pr_created",
-      "branch": "repo-assist/issue-2-bookmark-form-98d4981c53586316",
-      "attempt_date": "2026-03-26T05:45:00Z",
-      "note": "PR created. BookmarkForm component with validation, 9 tests pass."
+      "branch": "repo-assist/issue-9-bookmark-list-component",
+      "attempt_date": "2026-03-26T06:05:00Z",
+      "note": "PR created for BookmarkList component. 8 tests pass. Labeled in-progress."
+    },
+    "8": {
+      "status": "pr_created",
+      "branch": "repo-assist/issue-8-search-filter",
+      "attempt_date": "2026-03-26T06:05:00Z",
+      "note": "PR created for SearchBar + filterBookmarks. 13 tests pass. Labeled in-progress."
     }
   },
   "infra_prs": {
@@ -32,26 +40,30 @@
       "note": "CI pending (0 check runs - waiting for maintainer to approve workflow runs)."
     }
   },
-  "backlog_cursor": 6,
+  "backlog_cursor": 9,
   "aw_triage": {
     "10": {"status": "stale_commented", "date": "2026-03-25T23:06:01Z", "note": "3+ comments. Do not comment again."},
     "11": {"status": "stale", "date": "2026-03-25T23:06:01Z", "note": "74+ comments - do not comment again"},
     "13": {"status": "inference_denied_commented", "date": "2026-03-25T23:06:01Z", "note": "3+ comments. Do not comment again."},
     "15": {"status": "no_action", "date": "2026-03-25T23:06:01Z", "note": "No-Op Runs tracker - do not assign to agent"},
     "16": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
-    "17": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."}
+    "17": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
+    "21": {"status": "commented", "date": "2026-03-26T06:10:00Z", "note": "Commented - issue #6 closed, PR #20 closed. Issue stale."},
+    "23": {"status": "commented", "date": "2026-03-26T06:10:00Z", "note": "Commented - PR #20 closed, issue #6 closed. Resolved."},
+    "24": {"status": "commented", "date": "2026-03-26T06:10:00Z", "note": "Commented - PR #22 closed, issue #2 closed. Resolved."}
   },
   "pipeline_state": {
     "status": "at_risk",
-    "reason": "CI not running on bot PRs - waiting for maintainer workflow approval. PRs #12, #19, new #6 PR, new #2 PR all have 0 CI check runs.",
+    "reason": "CI not running on bot PRs - waiting for maintainer workflow approval. PRs #12, #19 have 0 CI check runs. New PRs #25/#26 for issues #9/#8 submitted this run.",
     "dependency_chain": {
       "5": "foundational - PR #12 open (CI not run yet)",
-      "6": "depends on #5 - PR created (includes type file for standalone build)",
-      "2": "depends on #5 - PR created (includes type file for standalone build)",
-      "8_9": "unblocked when #5 merges",
-      "7": "unblocked when #2,#5,#6,#8,#9 merge",
+      "6": "CLOSED - completed",
+      "2": "CLOSED - completed",
+      "8": "PR created this run - depends on #5 (type file already on main)",
+      "9": "PR created this run - depends on #5 (type file already on main)",
+      "7": "unblocked when #8,#9,#5 merge",
       "3_4": "unblocked when #7 merges"
     },
-    "last_updated": "2026-03-26T05:45:00Z"
+    "last_updated": "2026-03-26T06:10:00Z"
   }
 }
