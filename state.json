@@ -1,14 +1,14 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-25T23:06:01Z",
+  "last_run": "2026-03-26T00:02:06Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
       "pr_number": 12,
       "branch": "repo-assist/issue-5-bookmark-data-model-26a587a86b8cc550",
       "attempt_date": "2026-03-22T03:12:00Z",
-      "note": "PR #12 open. CI pending (action_required - maintainer approval needed). PR #19 also open to fix CI test patterns."
+      "note": "PR #12 open. CI pending (action_required - maintainer approval needed). PR #19 also open to fix CI test patterns. 2 CI approval comments already posted - do not post more."
     }
   },
   "infra_prs": {
@@ -17,7 +17,7 @@
       "pr_number": 19,
       "status": "waiting_ci_approval",
       "created": "2026-03-25T15:22:51Z",
-      "note": "CI action_required - waiting for maintainer to approve workflow run."
+      "note": "CI action_required - waiting for maintainer to approve workflow run. 2 comments already posted - do not post more."
     }
   },
   "backlog_cursor": 5,
