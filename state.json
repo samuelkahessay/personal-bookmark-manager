@@ -1,60 +1,57 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-26T05:55:49Z",
+  "last_run": "2026-03-26T05:45:00Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
       "pr_number": 12,
       "branch": "repo-assist/issue-5-bookmark-data-model-26a587a86b8cc550",
       "attempt_date": "2026-03-22T03:12:00Z",
-      "note": "PR #12 open. 0 CI check runs - waiting for maintainer to approve workflow runs."
+      "note": "PR #12 open. CI pending (0 check runs - waiting for maintainer to approve workflow runs)."
     },
     "6": {
       "status": "pr_created",
-      "pr_number": 20,
-      "branch": "repo-assist/issue-6-localstorage-persistence-dcb244b2b659430b-b29c71ff03a7ab95",
+      "branch": "repo-assist/issue-6-localstorage-persistence-dcb244b2b659430b",
       "attempt_date": "2026-03-26T05:45:00Z",
-      "note": "PR #20 open. pipeline-scripts CI fix pushed 2026-03-26."
+      "note": "PR created. Includes studio/types/bookmark.ts for standalone buildability. 9 tests pass."
     },
     "2": {
       "status": "pr_created",
-      "pr_number": 22,
-      "branch": "repo-assist/issue-2-bookmark-form-98d4981c53586316-8e12da4b30f70c2e",
+      "branch": "repo-assist/issue-2-bookmark-form-98d4981c53586316",
       "attempt_date": "2026-03-26T05:45:00Z",
-      "note": "PR #22 open. pipeline-scripts CI fix pushed 2026-03-26."
+      "note": "PR created. BookmarkForm component with validation, 9 tests pass."
     }
   },
   "infra_prs": {
     "fix-pipeline-scripts-ci-test": {
       "branch": "repo-assist/fix-pipeline-scripts-ci-test-d508ecb71d6dee4a",
       "pr_number": 19,
-      "status": "open_no_ci",
+      "status": "waiting_ci_approval",
       "created": "2026-03-25T15:22:51Z",
-      "note": "0 CI check runs - maintainer workflow approval needed. Fix also applied to PR #20, #22 branches directly."
+      "note": "CI pending (0 check runs - waiting for maintainer to approve workflow runs)."
     }
   },
   "backlog_cursor": 6,
   "aw_triage": {
     "10": {"status": "stale_commented", "date": "2026-03-25T23:06:01Z", "note": "3+ comments. Do not comment again."},
     "11": {"status": "stale", "date": "2026-03-25T23:06:01Z", "note": "74+ comments - do not comment again"},
-    "13": {"status": "inference_denied_commented", "date": "2026-03-25T23:06:01Z", "note": "6+ comments. Do not comment again."},
+    "13": {"status": "inference_denied_commented", "date": "2026-03-25T23:06:01Z", "note": "3+ comments. Do not comment again."},
     "15": {"status": "no_action", "date": "2026-03-25T23:06:01Z", "note": "No-Op Runs tracker - do not assign to agent"},
     "16": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
-    "17": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
-    "21": {"status": "ghost_issue_commented", "date": "2026-03-26T05:55:49Z", "note": "Ghost issue from failed PR creation - commented. Covered by PR #20."}
+    "17": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."}
   },
   "pipeline_state": {
     "status": "at_risk",
-    "reason": "pipeline-scripts CI fix applied to PR #20 and #22 branches. PR #12, #19 still waiting for maintainer CI approval. Issues #8,#9 blocked on #5 merger.",
+    "reason": "CI not running on bot PRs - waiting for maintainer workflow approval. PRs #12, #19, new #6 PR, new #2 PR all have 0 CI check runs.",
     "dependency_chain": {
-      "5": "foundational - PR #12 open (0 CI runs - maintainer approval needed)",
-      "6": "depends on #5 - PR #20 open (pipeline-scripts fix applied)",
-      "2": "depends on #5 - PR #22 open (pipeline-scripts fix applied)",
+      "5": "foundational - PR #12 open (CI not run yet)",
+      "6": "depends on #5 - PR created (includes type file for standalone build)",
+      "2": "depends on #5 - PR created (includes type file for standalone build)",
       "8_9": "unblocked when #5 merges",
       "7": "unblocked when #2,#5,#6,#8,#9 merge",
       "3_4": "unblocked when #7 merges"
     },
-    "last_updated": "2026-03-26T05:55:49Z"
+    "last_updated": "2026-03-26T05:45:00Z"
   }
 }
