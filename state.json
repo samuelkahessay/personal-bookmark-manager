@@ -1,7 +1,7 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-26T06:30:00Z",
+  "last_run": "2026-03-26T07:00:00Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
@@ -31,6 +31,16 @@
       "branch": "repo-assist/issue-7-integrate-components",
       "attempt_date": "2026-03-26T06:28:00Z",
       "note": "PR created this run. studio/app/page.tsx wired with all components + localStorage. 50 tests passing."
+    },
+    "27": {
+      "status": "resolved_on_main",
+      "note": "Issue #27 is a tracking issue. Code (SearchBar.tsx, filter.ts) already on main via PR #26. Closed/commented 2026-03-26.",
+      "attempt_date": "2026-03-26T07:00:00Z"
+    },
+    "35": {
+      "status": "resolved_on_main",
+      "note": "Issue #35 is a tracking issue. Code (page.tsx) already on main via PR #32. Closed/commented 2026-03-26.",
+      "attempt_date": "2026-03-26T07:00:00Z"
     }
   },
   "infra_prs": {
@@ -44,30 +54,77 @@
   },
   "backlog_cursor": 7,
   "aw_triage": {
-    "10": {"status": "stale_commented", "date": "2026-03-25T23:06:01Z", "note": "3+ comments. Do not comment again."},
-    "11": {"status": "stale", "date": "2026-03-25T23:06:01Z", "note": "74+ comments - do not comment again"},
-    "13": {"status": "inference_denied_commented", "date": "2026-03-25T23:06:01Z", "note": "3+ comments. Do not comment again."},
-    "15": {"status": "no_action", "date": "2026-03-25T23:06:01Z", "note": "No-Op Runs tracker - do not assign to agent"},
-    "16": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
-    "17": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
-    "21": {"status": "commented_twice", "date": "2026-03-26T06:10:00Z", "note": "Commented - issue #6 closed, code on main. 4 comments already. Do not comment again."},
-    "23": {"status": "commented", "date": "2026-03-26T06:10:00Z", "note": "Commented - PR #20 closed, issue #6 closed. Resolved."},
-    "24": {"status": "commented", "date": "2026-03-26T06:10:00Z", "note": "Commented - PR #22 closed, issue #2 closed. Resolved."},
-    "27": {"status": "commented", "date": "2026-03-26T06:28:00Z", "note": "Commented - issue #8 closed, code on main (PR #26). Tracking issue can be closed."}
+    "10": {
+      "status": "stale_commented",
+      "date": "2026-03-25T23:06:01Z",
+      "note": "3+ comments. Do not comment again."
+    },
+    "11": {
+      "status": "stale",
+      "date": "2026-03-25T23:06:01Z",
+      "note": "74+ comments - do not comment again"
+    },
+    "13": {
+      "status": "inference_denied_commented",
+      "date": "2026-03-25T23:06:01Z",
+      "note": "3+ comments. Do not comment again."
+    },
+    "15": {
+      "status": "no_action",
+      "date": "2026-03-25T23:06:01Z",
+      "note": "No-Op Runs tracker - do not assign to agent"
+    },
+    "16": {
+      "status": "blocked",
+      "date": "2026-03-25T23:06:01Z",
+      "note": "Inference Access Denied. Labeled blocked. Do not comment again."
+    },
+    "17": {
+      "status": "blocked",
+      "date": "2026-03-25T23:06:01Z",
+      "note": "Inference Access Denied. Labeled blocked. Do not comment again."
+    },
+    "21": {
+      "status": "commented_twice",
+      "date": "2026-03-26T06:10:00Z",
+      "note": "Commented - issue #6 closed, code on main. 4 comments already. Do not comment again."
+    },
+    "23": {
+      "status": "commented",
+      "date": "2026-03-26T06:10:00Z",
+      "note": "Commented - PR #20 closed, issue #6 closed. Resolved."
+    },
+    "24": {
+      "status": "commented",
+      "date": "2026-03-26T06:10:00Z",
+      "note": "Commented - PR #22 closed, issue #2 closed. Resolved."
+    },
+    "27": {
+      "status": "commented",
+      "date": "2026-03-26T06:28:00Z",
+      "note": "Commented - issue #8 closed, code on main (PR #26). Tracking issue can be closed."
+    },
+    "36": {
+      "status": "investigated",
+      "date": "2026-03-26T07:00:00Z",
+      "note": "PR for integrate-components already merged (#32). Review agent failure is moot. Can close."
+    }
   },
   "pipeline_state": {
     "status": "on_track",
-    "reason": "Issue #7 PR opened this run. All component issues (#2,#6,#8,#9) closed. Next: #4 (styling) and #3 (tests) unblock after #7 merges.",
+    "reason": "Core features all merged. #4 (styling) and #3 (tests) now unblocked after #7 merged via PR #32.",
     "dependency_chain": {
       "5": "SUPERSEDED - code on main via PR #26; PR #12 open but stale",
       "6": "CLOSED",
       "2": "CLOSED",
       "8": "CLOSED",
       "9": "CLOSED",
-      "7": "PR created this run - pending review",
-      "4": "unblocked when #7 merges",
-      "3": "unblocked when #7 merges"
+      "7": "CLOSED (PR #32 merged)",
+      "27": "RESOLVED - tracking issue, code on main",
+      "35": "RESOLVED - tracking issue, code on main",
+      "4": "READY - unblocked, #7 merged",
+      "3": "READY - unblocked, #7 merged"
     },
-    "last_updated": "2026-03-26T06:30:00Z"
+    "last_updated": "2026-03-26T07:00:00Z"
   }
 }
