@@ -1,42 +1,73 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-26T06:18:00Z",
+  "last_run": "2026-03-26T06:30:00Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
       "pr_number": 12,
       "branch": "repo-assist/issue-5-bookmark-data-model-26a587a86b8cc550",
       "attempt_date": "2026-03-22T03:12:00Z",
-      "note": "PR #12 redundant - types/bookmark.ts already on main via PR #20. Commented recommending closure."
+      "note": "PR #12 open (ci-failure/repair-escalated). Code (bookmark.ts) already on main via PR #26. PR #12 is superseded."
     },
-    "6": {"status": "merged", "note": "Merged via commit 4ea56ae (PR #20 squash)."},
-    "2": {"status": "merged", "note": "Merged via commit 2d8f2b7 (PR #22 squash)."},
-    "9": {"status": "merged", "note": "Merged via commit a24d294 (PR #25 squash)."},
-    "8": {"status": "merged", "note": "Merged via commit dac8044 (PR #26 squash)."},
+    "6": {
+      "status": "closed",
+      "note": "Issue closed as completed. Code in studio/lib/storage.ts on main."
+    },
+    "2": {
+      "status": "closed",
+      "note": "Issue closed as completed. Code in studio/components/BookmarkForm.tsx on main."
+    },
+    "8": {
+      "status": "closed",
+      "note": "Issue closed as completed. Code in studio/lib/filter.ts and SearchBar.tsx on main via PR #26."
+    },
+    "9": {
+      "status": "closed",
+      "note": "Issue closed as completed. Code in studio/components/BookmarkList.tsx on main."
+    },
     "7": {
       "status": "pr_created",
-      "branch": "repo-assist/issue-7-main-page-integration",
-      "attempt_date": "2026-03-26T06:18:00Z",
-      "note": "PR created. 48 tests pass. Labeled in-progress."
+      "branch": "repo-assist/issue-7-integrate-components",
+      "attempt_date": "2026-03-26T06:28:00Z",
+      "note": "PR created this run. studio/app/page.tsx wired with all components + localStorage. 50 tests passing."
+    }
+  },
+  "infra_prs": {
+    "fix-pipeline-scripts-ci-test": {
+      "branch": "repo-assist/fix-pipeline-scripts-ci-test-d508ecb71d6dee4a",
+      "pr_number": 19,
+      "status": "awaiting_human_review",
+      "created": "2026-03-25T15:22:51Z",
+      "note": "CI pending - awaiting maintainer review/merge."
     }
   },
   "backlog_cursor": 7,
   "aw_triage": {
-    "10": {"status": "stale_commented", "date": "2026-03-25T23:06:01Z", "note": "Do not comment again."},
-    "11": {"status": "stale", "date": "2026-03-25T23:06:01Z", "note": "Do not comment again."},
-    "13": {"status": "inference_denied_commented", "date": "2026-03-25T23:06:01Z", "note": "Do not comment again."},
-    "15": {"status": "no_action", "date": "2026-03-25T23:06:01Z"},
-    "16": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Do not comment again."},
-    "17": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Do not comment again."},
-    "21": {"status": "stale_commented", "date": "2026-03-26T06:10:00Z", "note": "Code on main. Do not comment again."},
-    "23": {"status": "commented", "date": "2026-03-26T06:10:00Z"},
-    "24": {"status": "resolved_commented", "date": "2026-03-26T06:18:00Z"},
-    "27": {"status": "resolved_commented", "date": "2026-03-26T06:18:00Z"}
+    "10": {"status": "stale_commented", "date": "2026-03-25T23:06:01Z", "note": "3+ comments. Do not comment again."},
+    "11": {"status": "stale", "date": "2026-03-25T23:06:01Z", "note": "74+ comments - do not comment again"},
+    "13": {"status": "inference_denied_commented", "date": "2026-03-25T23:06:01Z", "note": "3+ comments. Do not comment again."},
+    "15": {"status": "no_action", "date": "2026-03-25T23:06:01Z", "note": "No-Op Runs tracker - do not assign to agent"},
+    "16": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
+    "17": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
+    "21": {"status": "commented_twice", "date": "2026-03-26T06:10:00Z", "note": "Commented - issue #6 closed, code on main. 4 comments already. Do not comment again."},
+    "23": {"status": "commented", "date": "2026-03-26T06:10:00Z", "note": "Commented - PR #20 closed, issue #6 closed. Resolved."},
+    "24": {"status": "commented", "date": "2026-03-26T06:10:00Z", "note": "Commented - PR #22 closed, issue #2 closed. Resolved."},
+    "27": {"status": "commented", "date": "2026-03-26T06:28:00Z", "note": "Commented - issue #8 closed, code on main (PR #26). Tracking issue can be closed."}
   },
   "pipeline_state": {
     "status": "on_track",
-    "reason": "Core features merged. Issue #7 PR opened with 48 tests. Next: #4 (UI), #3 (tests) after #7 merges.",
-    "last_updated": "2026-03-26T06:18:00Z"
+    "reason": "Issue #7 PR opened this run. All component issues (#2,#6,#8,#9) closed. Next: #4 (styling) and #3 (tests) unblock after #7 merges.",
+    "dependency_chain": {
+      "5": "SUPERSEDED - code on main via PR #26; PR #12 open but stale",
+      "6": "CLOSED",
+      "2": "CLOSED",
+      "8": "CLOSED",
+      "9": "CLOSED",
+      "7": "PR created this run - pending review",
+      "4": "unblocked when #7 merges",
+      "3": "unblocked when #7 merges"
+    },
+    "last_updated": "2026-03-26T06:30:00Z"
   }
 }
