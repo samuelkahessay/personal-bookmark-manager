@@ -1,14 +1,14 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-26T03:38:51Z",
+  "last_run": "2026-03-26T03:39:12Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
       "pr_number": 12,
       "branch": "repo-assist/issue-5-bookmark-data-model-26a587a86b8cc550",
       "attempt_date": "2026-03-22T03:12:00Z",
-      "note": "PR #12 open. CI pending (action_required - maintainer approval needed). PR #19 also open to fix CI test patterns. 2 CI approval comments already posted - do not post more."
+      "note": "PR #12 open. CI pending (0 check runs - waiting for maintainer to approve workflow runs). PR #19 also open to fix CI test patterns. Do not re-attempt - PR already covers issue."
     }
   },
   "infra_prs": {
@@ -17,7 +17,7 @@
       "pr_number": 19,
       "status": "waiting_ci_approval",
       "created": "2026-03-25T15:22:51Z",
-      "note": "CI action_required - waiting for maintainer to approve workflow run. Do not post more comments."
+      "note": "CI pending (0 check runs - waiting for maintainer to approve workflow runs). Do not re-attempt."
     }
   },
   "backlog_cursor": 5,
@@ -26,18 +26,18 @@
     "11": {"status": "stale", "date": "2026-03-25T23:06:01Z", "note": "74+ comments - do not comment again"},
     "13": {"status": "inference_denied_commented", "date": "2026-03-25T23:06:01Z", "note": "3+ comments. Do not comment again."},
     "15": {"status": "no_action", "date": "2026-03-25T23:06:01Z", "note": "No-Op Runs tracker - do not assign to agent"},
-    "16": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked."},
-    "17": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked."}
+    "16": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
+    "17": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."}
   },
   "pipeline_state": {
     "status": "at_risk",
-    "reason": "PR #12 (#5) and PR #19 (CI fix) pending CI - maintainer must approve workflow runs. All other pipeline issues blocked on #5.",
+    "reason": "PR #12 (#5) and PR #19 (CI fix) both have 0 CI check runs - waiting for maintainer to approve Actions workflow runs for bot-created PRs. All other pipeline issues (#2,#6,#7,#8,#9) blocked on #5.",
     "dependency_chain": {
-      "5": "foundational - PR #12 open",
+      "5": "foundational - PR #12 open (CI not run yet)",
       "2_6_8_9": "unblocked when #5 merges",
       "7": "unblocked when #2,#5,#6,#8,#9 merge",
       "3_4": "unblocked when #7 merges"
     },
-    "last_status_update": "2026-03-26T03:38:51Z"
+    "last_updated": "2026-03-26T03:39:12Z"
   }
 }
