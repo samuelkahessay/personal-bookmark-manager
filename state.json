@@ -1,45 +1,45 @@
 {
   "initialized": true,
   "note": "Seeded by public beta bootstrap",
-  "last_run": "2026-03-26T06:22:00Z",
+  "last_run": "2026-03-26T06:30:00Z",
   "issues_attempted": {
     "5": {
       "status": "pr_created",
       "pr_number": 12,
       "branch": "repo-assist/issue-5-bookmark-data-model-26a587a86b8cc550",
       "attempt_date": "2026-03-22T03:12:00Z",
-      "note": "PR #12 open. CI pending (0 check runs - waiting for maintainer to approve workflow runs). Has ci-failure + repair-escalated labels."
+      "note": "PR #12 open (ci-failure/repair-escalated). Code (bookmark.ts) already on main via PR #26. PR #12 is superseded."
     },
     "6": {
       "status": "closed",
-      "note": "Issue closed as completed by maintainer. Code on main. Stale aw issues #21 and #23 commented."
+      "note": "Issue closed as completed. Code in studio/lib/storage.ts on main."
     },
     "2": {
       "status": "closed",
-      "note": "Issue closed as completed. Stale aw issue #24 commented."
+      "note": "Issue closed as completed. Code in studio/components/BookmarkForm.tsx on main."
     },
     "8": {
       "status": "closed",
-      "note": "Issue closed as completed by maintainer. Code on main. Stale aw issues #27 and (partial #23) commented."
+      "note": "Issue closed as completed. Code in studio/lib/filter.ts and SearchBar.tsx on main via PR #26."
     },
     "9": {
       "status": "closed",
-      "note": "Issue closed as completed by maintainer. Code on main."
+      "note": "Issue closed as completed. Code in studio/components/BookmarkList.tsx on main."
     },
     "7": {
       "status": "pr_created",
-      "branch": "repo-assist/issue-7-integrate-components-main-page",
-      "attempt_date": "2026-03-26T06:22:00Z",
-      "note": "PR created for page.tsx integration. 46 tests pass. Labeled in-progress."
+      "branch": "repo-assist/issue-7-integrate-components",
+      "attempt_date": "2026-03-26T06:28:00Z",
+      "note": "PR created this run. studio/app/page.tsx wired with all components + localStorage. 50 tests passing."
     }
   },
   "infra_prs": {
     "fix-pipeline-scripts-ci-test": {
       "branch": "repo-assist/fix-pipeline-scripts-ci-test-d508ecb71d6dee4a",
       "pr_number": 19,
-      "status": "waiting_ci_approval",
+      "status": "awaiting_human_review",
       "created": "2026-03-25T15:22:51Z",
-      "note": "CI pending (0 check runs - waiting for maintainer to approve workflow runs)."
+      "note": "CI pending - awaiting maintainer review/merge."
     }
   },
   "backlog_cursor": 7,
@@ -50,24 +50,24 @@
     "15": {"status": "no_action", "date": "2026-03-25T23:06:01Z", "note": "No-Op Runs tracker - do not assign to agent"},
     "16": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
     "17": {"status": "blocked", "date": "2026-03-25T23:06:01Z", "note": "Inference Access Denied. Labeled blocked. Do not comment again."},
-    "21": {"status": "commented", "date": "2026-03-26T06:22:00Z", "note": "Stale fallback issue for #6. Commented resolved. Issue #6 closed."},
-    "23": {"status": "commented", "date": "2026-03-26T06:22:00Z", "note": "Stale Protected Files issue for PR #20/#6. Commented resolved."},
-    "24": {"status": "commented", "date": "2026-03-26T06:22:00Z", "note": "Stale Protected Files issue for PR #22/#2. Commented resolved."},
-    "27": {"status": "commented", "date": "2026-03-26T06:22:00Z", "note": "Stale fallback issue for #8. Commented resolved. Issue #8 closed."}
+    "21": {"status": "commented_twice", "date": "2026-03-26T06:10:00Z", "note": "Commented - issue #6 closed, code on main. 4 comments already. Do not comment again."},
+    "23": {"status": "commented", "date": "2026-03-26T06:10:00Z", "note": "Commented - PR #20 closed, issue #6 closed. Resolved."},
+    "24": {"status": "commented", "date": "2026-03-26T06:10:00Z", "note": "Commented - PR #22 closed, issue #2 closed. Resolved."},
+    "27": {"status": "commented", "date": "2026-03-26T06:28:00Z", "note": "Commented - issue #8 closed, code on main (PR #26). Tracking issue can be closed."}
   },
   "pipeline_state": {
     "status": "on_track",
-    "reason": "Issue #7 implemented and PR created (46 tests pass). All component issues (#2,#5,#6,#8,#9) closed. Issues #4 and #3 are next.",
+    "reason": "Issue #7 PR opened this run. All component issues (#2,#6,#8,#9) closed. Next: #4 (styling) and #3 (tests) unblock after #7 merges.",
     "dependency_chain": {
-      "5": "PR #12 open (CI ci-failure label)",
-      "6": "CLOSED - completed",
-      "2": "CLOSED - completed",
-      "8": "CLOSED - completed",
-      "9": "CLOSED - completed",
-      "7": "PR created this run - all deps met",
-      "4": "unblocked - styling can be added now",
-      "3": "unblocked - tests can be written now"
+      "5": "SUPERSEDED - code on main via PR #26; PR #12 open but stale",
+      "6": "CLOSED",
+      "2": "CLOSED",
+      "8": "CLOSED",
+      "9": "CLOSED",
+      "7": "PR created this run - pending review",
+      "4": "unblocked when #7 merges",
+      "3": "unblocked when #7 merges"
     },
-    "last_updated": "2026-03-26T06:22:00Z"
+    "last_updated": "2026-03-26T06:30:00Z"
   }
 }
