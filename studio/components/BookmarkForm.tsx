@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Bookmark } from '@/types/bookmark';
 
 type BookmarkInput = Omit<Bookmark, 'id'>;
+type FormErrors = { url?: string; title?: string };
 
 interface BookmarkFormProps {
   onSubmit: (bookmark: BookmarkInput) => void;
@@ -13,10 +14,10 @@ export default function BookmarkForm({ onSubmit }: BookmarkFormProps) {
   const [url, setUrl] = useState('');
   const [title, setTitle] = useState('');
   const [tags, setTags] = useState('');
-  const [errors, setErrors] = useState<{ url?: string; title?: string }>({});
+  const [errors, setErrors] = useState<FormErrors>({});
 
   function validate(): boolean {
-    const newErrors: { url?: string; title?: string } = {};
+    const newErrors: FormErrors = {};
     if (!url.trim()) newErrors.url = 'URL is required';
     if (!title.trim()) newErrors.title = 'Title is required';
     setErrors(newErrors);
